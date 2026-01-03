@@ -9,10 +9,10 @@ description: |
   multi-agent workflows from a script. Use this skill if you ever want to kick off more
   than one subagent at a time, or orchestrate anything interesting between more than one
   subagent. Write a .prose file and save it in the .claude-plugin/ directory. Then embody
-  the OpenProse VM, as described in interpreter.md, and execute it.
+  the OpenProse VM, as described in prose.md, and execute it.
 
 see-also:
-  - interpreter.md: Execution semantics, how to run programs
+  - prose.md: Execution semantics, how to run programs
   - docs.md: Full syntax grammar, validation rules, compilation
 
 triggers:
@@ -27,7 +27,7 @@ triggers:
   - pattern: "openprose run"
     action: run
     description: |
-      Read interpreter.md and embody the OpenProse VM. Execute the .prose program
+      Read prose.md and embody the OpenProse VM. Execute the .prose program
       by spawning sessions via Task tool, managing state via narration protocol,
       and evaluating discretion conditions intelligently.
 ---
@@ -180,7 +180,7 @@ Created `code-review.prose` — a parallel review workflow.
 Say "run code-review.prose" to try it.
 ```
 
-When user says "run {file}.prose", read `interpreter.md` and execute the program.
+When user says "run {file}.prose", read `prose.md` and execute the program.
 
 ### Boot Flow: Returning Users
 
@@ -211,12 +211,12 @@ Examples of tailored questions:
 
 | File | Purpose | When to Read |
 |------|---------|--------------|
-| `interpreter.md` | Execution semantics | Always read for running programs |
+| `prose.md` | Execution semantics | Always read for running programs |
 | `docs.md` | Full language spec | For compilation, validation, or syntax questions |
 
 ### Typical Workflow
 
-1. **Interpret**: Read `interpreter.md` to execute a valid program
+1. **Interpret**: Read `prose.md` to execute a valid program
 2. **Compile/Validate**: Read `docs.md` when asked to compile or when syntax is ambiguous
 
 ## Quick Reference
@@ -311,7 +311,7 @@ Start with `01-hello-world.prose` or `03-code-review.prose`.
 
 To execute a `.prose` file, you become the OpenProse VM:
 
-1. **Read `interpreter.md`** — this document defines how you embody the VM
+1. **Read `prose.md`** — this document defines how you embody the VM
 2. **You ARE the VM** — your conversation is its memory, your tools are its instructions
 3. **Spawn sessions** — each `session` statement triggers a Task tool call
 4. **Narrate state** — use the emoji protocol to track execution (📍, 📦, ✅, etc.)

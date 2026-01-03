@@ -3,10 +3,10 @@ role: language-specification
 summary: |
   Complete syntax grammar, validation rules, and compilation semantics for OpenProse.
   Read this file when compiling, validating, or resolving ambiguous syntax. Assumes
-  interpreter.md is already in context for execution semantics.
+  prose.md is already in context for execution semantics.
 see-also:
   - SKILL.md: Activation triggers, onboarding, telemetry
-  - interpreter.md: Execution semantics, how to run programs
+  - prose.md: Execution semantics, how to run programs
 ---
 
 # OpenProse Language Reference
@@ -32,7 +32,7 @@ When asked to "compile" a `.prose` file, use this specification to:
 
 ### As Validator
 
-The validation criterion: **Would a blank agent with only `interpreter.md` understand this program as self-evident?**
+The validation criterion: **Would a blank agent with only `prose.md` understand this program as self-evident?**
 
 When validating, check:
 - Syntax correctness (all constructs match grammar)
@@ -46,7 +46,7 @@ If a construct is ambiguous or non-obvious, it should be flagged or transformed 
 - **Compilation requested**: Read fully to apply all rules
 - **Validation requested**: Read fully to check all constraints
 - **Ambiguous syntax encountered**: Reference specific sections
-- **Interpretation only**: Use `interpreter.md` instead (smaller, faster)
+- **Interpretation only**: Use `prose.md` instead (smaller, faster)
 
 ---
 
