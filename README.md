@@ -104,7 +104,7 @@ Key safety considerations:
 1. Read [SECURITY.md](SECURITY.md) to understand what OpenProse does
 2. Complete the [Quick Start Safety Checklist](QUICKSTART-SAFETY.md)
 3. Start in an isolated test directory
-4. Begin with read-only examples (`01-hello-world.prose`)
+4. Begin with simple examples (`01-hello-world.prose`, `02-research-and-summarize.prose`)
 5. Review the permission system (`12-secure-agent-permissions.prose`)
 
 See the [Security Guide](SECURITY.md) for detailed safety information and best practices.
