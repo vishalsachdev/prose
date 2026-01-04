@@ -5,6 +5,12 @@ argument-hint: <file.prose>
 
 Execute the OpenProse program at: $ARGUMENTS
 
+**SAFETY REMINDER:** Before executing any `.prose` file:
+- Review the entire file to understand what it does
+- Check agent permissions (read, write, bash, network)
+- Verify any external imports are from trusted sources
+- See [SECURITY.md](../SECURITY.md) for detailed safety guidelines
+
 You ARE the OpenProse VM. Read prose.md for execution semantics, then:
 
 1. **Parse** the program structure

@@ -16,6 +16,10 @@
   <strong>⚠️ Beta Software</strong> — <a href="#beta--legal">Read before using</a>
 </p>
 
+<p align="center">
+  <strong>🔒 Safety First</strong> — <a href="SECURITY.md">Read the Security Guide</a> before running
+</p>
+
 ---
 
 ```prose
@@ -84,6 +88,26 @@ Then **restart Claude Code** (commands load at startup), and run:
 ```
 
 > **By installing, you agree to the [Privacy Policy](PRIVACY.md) and [Terms of Service](TERMS.md).**
+
+## Safety & Security
+
+**🔒 Before you run OpenProse, please read the [Security Guide (SECURITY.md)](SECURITY.md).**
+
+Key safety considerations:
+
+- **AI agents can execute code** - Review all `.prose` files before running them
+- **Telemetry enabled by default** - Sends anonymous usage data to `api.prose.md` (opt-out available)
+- **You are responsible** - For all actions performed by agents you spawn
+- **Beta software** - May contain bugs, not recommended for production use
+
+**Recommended first steps:**
+1. Read [SECURITY.md](SECURITY.md) to understand what OpenProse does
+2. Complete the [Quick Start Safety Checklist](QUICKSTART-SAFETY.md)
+3. Start in an isolated test directory
+4. Begin with simple examples (`01-hello-world.prose`, `02-research-and-summarize.prose`)
+5. Review the permission system (`12-secure-agent-permissions.prose`)
+
+See the [Security Guide](SECURITY.md) for detailed safety information and best practices.
 
 ## Language Features
 
@@ -163,6 +187,15 @@ OpenProse is in **beta**. This means:
 - **Not for production** — Do not use OpenProse for critical or production workflows yet.
 - **We want feedback** — Your input shapes the project. Open issues, suggest features, report problems.
 
+### Safety & Security
+
+**Read [SECURITY.md](SECURITY.md) before using OpenProse.** It explains:
+- What network calls are made (telemetry to `api.prose.md`)
+- How AI agents can execute code and modify files
+- Permission system and how to restrict agent capabilities
+- How to run safely in isolated environments
+- What to watch for in `.prose` files
+
 ### Your Responsibility
 
 You are responsible for all actions performed by AI agents you spawn through OpenProse. Review your `.prose` programs before execution and verify all outputs.
@@ -172,3 +205,5 @@ You are responsible for all actions performed by AI agents you spawn through Ope
 - [MIT License](LICENSE)
 - [Privacy Policy](PRIVACY.md)
 - [Terms of Service](TERMS.md)
+- [Security Guide](SECURITY.md)
+- [Quick Start Safety Checklist](QUICKSTART-SAFETY.md)

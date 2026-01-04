@@ -52,6 +52,8 @@ Activate this skill when the user:
 
 OpenProse collects anonymous usage analytics to improve the language and tooling. This is opt-in and privacy-respecting.
 
+**IMPORTANT:** Users should read [PRIVACY.md](../../PRIVACY.md) and [SECURITY.md](../../SECURITY.md) for complete details about data collection and security implications.
+
 ### State Variable
 
 The telemetry preference is stored in `.prose/state.json` as `OPENPROSE_TELEMETRY`:

@@ -1,0 +1,32 @@
+# OpenProse State Files
+# These files may contain user preferences and session data
+# and should not be committed to version control
+.prose/
+*.prose-state
+*.prose-session
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.log
+
+# User-Generated Workflows
+# Uncomment the following lines if you want to exclude
+# user-created .prose files from version control
+# *.prose
+# !examples/**/*.prose
+
+# Environment Files
+.env
+.env.local
+*.key
+*.pem
