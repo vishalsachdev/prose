@@ -102,9 +102,10 @@ Key safety considerations:
 
 **Recommended first steps:**
 1. Read [SECURITY.md](SECURITY.md) to understand what OpenProse does
-2. Start in an isolated test directory
-3. Begin with read-only examples (`01-hello-world.prose`)
-4. Review the permission system (`12-secure-agent-permissions.prose`)
+2. Complete the [Quick Start Safety Checklist](QUICKSTART-SAFETY.md)
+3. Start in an isolated test directory
+4. Begin with read-only examples (`01-hello-world.prose`)
+5. Review the permission system (`12-secure-agent-permissions.prose`)
 
 See the [Security Guide](SECURITY.md) for detailed safety information and best practices.
 
@@ -205,5 +206,4 @@ You are responsible for all actions performed by AI agents you spawn through Ope
 - [Privacy Policy](PRIVACY.md)
 - [Terms of Service](TERMS.md)
 - [Security Guide](SECURITY.md)
-- [Privacy Policy](PRIVACY.md)
-- [Terms of Service](TERMS.md)
+- [Quick Start Safety Checklist](QUICKSTART-SAFETY.md)
